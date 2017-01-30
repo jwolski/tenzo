@@ -20,6 +20,18 @@ to provide an isolated environment for applications." [2]
 # What makes virtual machines "bad"?
 
 # How long have cgroups and namespaces been around?
+Initial introduction of cgroups came in 2007. cgroups came from the work
+originally done by engineers at Google, originally called "process containers."
+cgroups were merged into the mainline kernel in version 2.6.24. The cgroups
+implementation merged into the kernel at this time are now referred to v1. This
+implementation was eventually rewritten. The current version is referred to as
+v2.
+
+cgroups provide:
+* resource limiting: e.g., groups cannot exceed memory limit.
+* prioritization: assigning shares (larger/smaller) of CPU utilization or I/O.
+* accounting: measuring group's resource usage
+* control: freezing, check pointing, and restarting.
 
 # What makes Docker a "containerization platform"?
 
