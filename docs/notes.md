@@ -57,6 +57,27 @@ proxygens.
 * https://github.com/Exa-Networks/exabgp
 * http://www.linuxvirtualserver.org/software/ipvs.html
 
+## Docker at Spotify
+Link: https://www.youtube.com/watch?v=pts6F00GFuU
+
+* There are 250+ server per ops engineer. The physical machines are getting
+tough to handle/manage.
+* Hard for devs to have development environment that resembles prod. Can't run
+all of the prod services on one machine.
+* Requisitioning new hardware is slow
+* Hardware utilization is low
+* Unwieldly to manage large number of machines, even though they use Puppet.
+* To upgrade packages, ops usually SSHs in (or use Fabric) to SSH in to do
+apt-get updates.
+* Failures of package upgrades causes different servers to become inconsistent
+with one another, e.g. one machine has a different version than another
+* Before Docker, they tried to get very familiar with LXC.
+* Didn't want to deal with overhead of virtual machines.
+* They built base images for their internal services
+* They are building an internal tool to orchestrate all their Docker hosts
+* Q: Why Docker instead of VM? 1) Provisioning time. 2) Size of VM packages
+* On roadmap: multi-tenancy, auto-scaling, scheduling
+
 ## Filing a Good Bug Report
 When filing a bug report make sure to include the following details: version
 numbers or git SHAs, configuration values, logs, sample code to reproduce,
