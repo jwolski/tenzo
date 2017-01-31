@@ -50,11 +50,21 @@ GODEBUG=schedtrace=1000,scheddetail=1 ./main
     * pkg: database/sql, type: [Result](https://golang.org/pkg/database/sql/#Result)
     * pkg: net, type: [Conn](https://golang.org/pkg/net/#Conn)
 
+## Libraries
+* https://github.com/gorilla/handlers - A collection of useful handlers for Go's
+net/http package.
+* https://github.com/gorilla/mux - A powerful URL router and dispatcher for
+golang.
+
 ## Links
 * http://peter.bourgon.org/go-in-production/
 
 ## Projects
-* https://github.com/kubernetes/kubernetes/tree/master/cmd
-* https://github.com/camlistore/camlistore/tree/master/cmd
-* https://github.com/hashicorp/consul
+* https://github.com/camlistore/camlistore
+* https://github.com/cockroachdb/cockroach
 * https://github.com/coreos/etcd
+* https://github.com/docker/docker
+* https://github.com/hashicorp/consul
+* https://github.com/kubernetes/kubernetes
+* https://github.com/nsqio/nsq
+* https://github.com/prometheus/prometheus
